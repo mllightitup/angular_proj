@@ -1,0 +1,109 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div class="header">
+
+    <img class="logo" src="https://acsmnhtn.ejoinme.org/Portals/7135/Users/013/41/22541/NEX%20Group-%20Silver%20Sponsor.png?ver=2017-03-01-072709-290">
+
+    <button mat-button>Домой</button>
+    <button mat-button>Каталог         </button>
+
+    <a class="number">8 800 555-35-35</a>
+
+  </div>
+
+  <div id="container">
+    <div ng2-carouselamos class="slides-wrapper" [items]="items" [width]="2160" [$prev]="prev" [$next]="next" [$item]="item">
+    </div>
+
+    <ng-template #prev>
+      <img src="assets/images/left-arrow.png" id="left" />
+    </ng-template>
+    <ng-template #next>
+      <img src="assets/images/right-arrow.png" id="right" />
+    </ng-template>
+    <ng-template #item let-item let-i="index">
+
+      <div class="items">
+        <img class="mySlides" src="{{ item.name }}">
+      </div>
+
+    </ng-template>
+
+    <div class="recomedation">
+      <a href="#"> <img src="assets/images/iphone-logo1.png" href="#"> </a>
+      <a href="#"> <img class="samsung" src="assets/images/samsung_logo1.png" href="#"> </a>
+      <a href="#"> <img src="assets/images/Xperia_logo1.png" href="#"> </a>
+    </div>
+    <base href="/">
+    <div class="catalog">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title> <b>iPhone X Space Gray</b></mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="assets/images/xblack.png" alt="Photo of a Shiba Inu">
+        <mat-card-actions>
+          <a href="/product"><button mat-button (click)="openSnackBar()" aria-label="Show an example snack-bar" class="buy"><b>Купить</b></button></a>
+          <a><button mat-button class="addtocart"><b>В корзину</b></button></a>
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title> <b>iPhone X Silver</b></mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="assets/images/xwhite.png" alt="Photo of a Shiba Inu">
+        <mat-card-actions>
+          <a href="/product"><button mat-button class="buy"><b>Купить</b></button></a>
+          <a><button mat-button class="addtocart"><b>В корзину</b></button></a>
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title> <b>iPhone 8 Space Gray</b></mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="assets/images/i8black.png" alt="Photo of a Shiba Inu">
+        <mat-card-actions>
+          <a href="/product"><button mat-button class="buy"><b>Купить</b></button></a>
+          <a><button mat-button class="addtocart"><b>В корзину</b></button></a>
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title> <b>iPhone 8 Silver</b></mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="assets/images/i8white.png" alt="Photo of a Shiba Inu">
+        <mat-card-actions>
+          <a href="/product"><button mat-button class="buy"><b>Купить</b></button></a>
+          <a><button mat-button class="addtocart"><b>В корзину</b></button></a>
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title> <b>iPhone 8 (PRODUCT)<sup><small>RED<sup><small>TM</small></sup></small></sup></b></mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="assets/images/i8red.png" alt="Photo of a Shiba Inu">
+        <mat-card-actions>
+          <a href="/product"><button mat-button class="buy"><b>Купить</b></button></a>
+          <a><button mat-button class="addtocart"><b>В корзину</b></button></a>
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title> <b>iPhone 8 Gold</b></mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="assets/images/i8gold.png" alt="Photo of a Shiba Inu">
+        <mat-card-actions>
+          <a href="/product"><button mat-button class="buy"><b>Купить</b></button></a>
+          <a><button mat-button class="addtocart"><b>В корзину</b></button></a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+  <mat-toolbar>
+    <p class="footer">Copyright © NEXShop. All rights reserved. </p>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
